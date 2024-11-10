@@ -1,0 +1,76 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Title = "TITLE";
+        Console.SetWindowSize(100, 30);
+        ShowTitleScreen();
+        MainMenu();
+    }
+
+    static void ShowTitleScreen()
+    {
+        Console.Clear();
+        Console.WriteLine("Welcome to the Program!");
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
+    }
+
+    static void MainMenu()
+    {
+        while (true)
+        {
+            Console.Clear();
+            Console.WriteLine("CLICK number '1': MODULE 1.1");
+            Console.WriteLine("CLICK number '2': MODULE 2.1");
+            Console.WriteLine("CLICK number '3': MODULE 3.1");
+            Console.WriteLine("CLICK number '4' to Exit");
+
+            ConsoleKeyInfo choice = Console.ReadKey(true);
+            switch (choice.KeyChar)
+            {
+                case '1':
+                    Module1();
+                    break;
+                case '2':
+                    Module2();
+                    break;
+                case '3':
+                    Module3();
+                    break;
+                case '4':
+                    return; // Exit or Back Hehe
+                default:
+                    Console.WriteLine("\nInvalid Option. Please Try again!");
+                    Console.ReadKey();
+                    break;
+            }
+        }
+    }
+
+    static void Module1()
+    {
+        Console.Clear();
+        Console.WriteLine("ILAGAY MO YUNG CODE MO DITO, COPY MO LANG YUNG MGA NASULAT MO SA MODULE BOOKS MO, NOTE EXAMPLE LNG TONG CONSOLE.WRITE NA TO PARA MA GETS MO");
+        Console.WriteLine("Press any key to return to the main menu...");
+        Console.ReadKey();
+    }
+
+    static void Module2()
+    {
+        Console.Clear();
+        Console.WriteLine("SAME LANG GINAWA MO ULIT CODE MO SA MODULE BOOKS, MAKE SURE NA DOUBLE CHECK, MAKE SURE NA HINDI AALISIN ANG Clear & ReadKey");
+        Console.WriteLine("Press any key to return to the main menu...");
+        Console.ReadKey();
+    }
+
+    static void Module3()
+    {
+        Console.Clear();
+        Console.WriteLine("SAME LANG SA GINAWA MO NUNG UNA AND PANGALAWA U-ULIT ULITIN MO NALANG HANGGANG MODULE1-3");
+        Console.WriteLine("Press any key to return to the main menu...");
+        Console.ReadKey();
+    }
+}
