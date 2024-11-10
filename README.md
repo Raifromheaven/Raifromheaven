@@ -1,10 +1,4 @@
-using System;
-using System.Threading;
 
-namespace BIRDS_OF_FEATHER
-{
-    class Program
-    {
         static void Main()
         {
             string title = "\n";
