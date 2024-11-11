@@ -53,24 +53,39 @@ class Program
     static void Module1()
     {
         Console.Clear();
-        Console.WriteLine("ILAGAY MO YUNG CODE MO DITO, COPY MO LANG YUNG MGA NASULAT MO SA MODULE BOOKS MO, NOTE EXAMPLE LNG TONG CONSOLE.WRITE NA TO PARA MA GETS MO");
-        Console.WriteLine("Press any key to return to the main menu...");
+        
+        //Deceleration
+        double radius, volume;
+        const double pie = 3.1416;
+
+        //Input
+        Console.Write("Enter the Radius of the sphere: ");
+        radius = Convert.ToDouble(Console.ReadLine());
+  
+        //Calculation
+        volume = (4.0/3.0) * pie * Math.Pow(radius); 
+  
+        //Output
+        Console.WriteLine("The volume of the sphere is: " + volume);
+
         Console.ReadKey();
     }
 
     static void Module2()
     {
         Console.Clear();
-        Console.WriteLine("SAME LANG GINAWA MO ULIT CODE MO SA MODULE BOOKS, MAKE SURE NA DOUBLE CHECK, MAKE SURE NA HINDI AALISIN ANG Clear & ReadKey");
+        
         Console.WriteLine("Press any key to return to the main menu...");
-        Console.ReadKey();
+       
+       Console.ReadKey();
     }
 
     static void Module3()
     {
         Console.Clear();
-        Console.WriteLine("SAME LANG SA GINAWA MO NUNG UNA AND PANGALAWA U-ULIT ULITIN MO NALANG HANGGANG MODULE1-3");
+        
         Console.WriteLine("Press any key to return to the main menu...");
+        
         Console.ReadKey();
     }
 }
