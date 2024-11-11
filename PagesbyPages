@@ -99,8 +99,11 @@ Console.WriteLine("\nWATER");
     {
         Console.Clear();
         
-        Console.WriteLine("Press any key to return to the main menu...");
-        
+        //Loop
+        For (int i = 1; i < = 5; i++)
+        { 
+           Console.WriteLine(i + "\t\t" + i * i );
+        } 
         Console.ReadKey();
     }
 }
