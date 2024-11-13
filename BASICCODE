@@ -1,0 +1,184 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Title = "TITLE";
+        Console.SetWindowSize(100, 30);
+        ShowTitleScreen();
+        MainMenu();
+    }
+
+    static void ShowTitleScreen()
+    {
+        Console.Clear();
+        Console.WriteLine(@"
+
+PASTE MO DITO YUNG TEXT IMAGE NA GALING CHROME OR ASCII ART 
+
+");
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
+    }
+
+    static void MainMenu()
+    {
+        while (true)
+        {
+            Console.Clear();
+            Console.WriteLine("CLICK number '1': MODULE 1.1");
+            Console.WriteLine("CLICK number '2': MODULE 2.1");
+            Console.WriteLine("CLICK number '3': MODULE 3.1");
+            Console.WriteLine("CLICK number '4' to Exit");
+
+            ConsoleKeyInfo choice = Console.ReadKey(true);
+            switch (choice.KeyChar)
+            {
+                case '1':
+                    Textimage1();
+                    break;
+                case '2':
+                    Textimage2();
+                    break;
+                case '3':
+                    Textimage3();
+                    break;
+                case '4':
+                    Textimage4();
+                    break;
+                case '5':
+                    Textimage5();
+                    break;
+                case '0':
+                    return; // Exit 
+                default:
+                    Console.WriteLine("\nInvalid Option. Please Try again!");
+                    Console.ReadKey();
+                    break;
+            }
+        }
+    }
+
+    static void Textimage1()
+    {
+        Console.Clear();
+        
+       Console.Write(@"
+
+PASTE MO YUNG TEXT IMAGE MO DITO
+
+");
+
+        Console.ReadKey();
+    }
+
+    static void Textimage2()
+    {
+        Console.Clear();
+        
+        Console.Write(@"
+
+PASTE MO YUNG TEXT IMAGE MO DITO
+
+");
+       Console.ReadKey();
+    }
+
+    static void Textimage3()
+    {
+        Console.Clear();
+        
+        Console.Write(@"
+
+PASTE MO YUNG TEXT IMAGE MO DITO
+
+");
+        Console.ReadKey();
+    }
+static void Textimage4()
+    {
+        Console.Clear();
+        
+        Console.Write(@"
+
+PASTE MO YUNG TEXT IMAGE MO DITO
+
+");
+        Console.ReadKey();
+    }
+static void Textimage5()
+    {
+        Console.Clear();
+        
+        Console.Write(@"
+
+PASTE MO YUNG TEXT IMAGE MO DITO
+
+");
+        Console.ReadKey();
+    }
+static void Textimage6()
+    {
+        Console.Clear();
+        
+        Console.Write("CLICK '1': PHOTO1");
+        Console.Write("CLICK '2': PHOTO2");
+        Console.Write("CLICK '3': PHOTO3");
+
+     
+    ConsoleKeyInfo choice = Console.ReadKey(true);
+            switch (choice.KeyChar)
+            {
+                case '1':
+                    Photo1();
+                    break;
+                case '2':
+                    Photo2();
+                    break;
+                case '3':
+                    Photo3();
+                    break;
+                case '0':
+                    return; // Exit 
+                default:
+                    Console.WriteLine("\nInvalid Option. Please Try again!");
+                    Console.ReadKey();
+                    break;
+    }
+static void Photo1()
+    {
+        Console.Clear();
+        
+        Console.Write(@"
+
+PASTE MO YUNG TEXT IMAGE MO DITO
+
+");
+        Console.ReadKey();
+    }
+static void Photo2)
+    {
+        Console.Clear();
+        
+        Console.Write(@"
+
+PASTE MO YUNG TEXT IMAGE MO DITO
+
+");
+        Console.ReadKey();
+    }
+static void Photo3()
+    {
+        Console.Clear();
+        
+        Console.Write(@"
+
+PASTE MO YUNG TEXT IMAGE MO DITO
+
+");
+        Console.ReadKey();
+    
+            }
+        }
+    }
