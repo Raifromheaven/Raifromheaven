@@ -1,0 +1,315 @@
+using System;
+using System.Threading;
+
+class Program
+{
+    private static void LoadingAnimation()
+    {
+        // Define the dancing stick man frames
+        string[] frame1 = new string[]
+        {
+            "   O ",
+            "  /|\\",
+            "   | ",
+            "  / \\",
+            "     "
+        };
+
+        string[] frame2 = new string[]
+        {
+            "   O ",
+            "  \\|/",
+            "   | ",
+            "  / \\",
+            "     "
+        };
+
+        string[] frame3 = new string[]
+        {
+            "   O ",
+            "  /|\\",
+            "   | ",
+            "  /  ",
+            " /   "
+        };
+
+        string[] frame4 = new string[]
+        {
+            "   O ",
+            "  \\|/",
+            "   | ",
+            "   \\ ",
+            "    \\"
+        };
+
+        // Arrange frames in an array to cycle through them
+        string[][] frames = new string[][] { frame1, frame2, frame3, frame4 };
+
+        int totalFrames = frames.Length;
+
+        // Loop through each frame repeatedly
+        for (int loop = 0; loop < 10; loop++)  // Adjust the loop count for longer animation
+        {
+            for (int i = 0; i < totalFrames; i++)
+            {
+                Console.Clear();
+                foreach (var line in frames[i])
+                {
+                    Console.WriteLine(line);
+                }
+                Thread.Sleep(200);  // Adjust the speed of the animation
+            }
+        }
+    }
+
+    private static void ChristmasTreeAnimation()
+    {
+        string[] frame1 = new string[]
+        {
+        "       *",
+        "      ***",
+        "     *****",
+        "    *******",
+        "   *********",
+        "  ***********",
+        " *************",
+        "  ***********",
+        "   *********",
+        "    *******",
+        "     *****",
+        "      ***",
+        "       *"
+        };
+
+        string[] frame2 = new string[]
+        {
+        "      *",
+        "     ***",
+        "    *****",
+        "   *******",
+        "  ***********",
+        " *************",
+        "  ***********",
+        "   *********",
+        "    *******",
+        "     *****",
+        "      ***",
+        "       *"
+        };
+
+        string[] frame3 = new string[]
+        {
+        "       *",
+        "      ***",
+        "     *****",
+        "    *******",
+        "   *********",
+        "  ***********",
+        " *************",
+        "  ***********",
+        "   *********",
+        "    *******",
+        "     *****",
+        "      ***",
+        "       *"
+        };
+
+        string[] frame4 = new string[]
+        {
+        "       *",
+        "      ***",
+        "     *****",
+        "    *******",
+        "   *********",
+        "  ***********",
+        " *************",
+        "  ***********",
+        "   *********",
+        "    *******",
+        "     *****",
+        "      ***",
+        "       *"
+        };
+
+        string[] frame5 = new string[]
+        {
+        "       *",
+        "      ***",
+        "     *****",
+        "    *******",
+        "   *********",
+        "  ***********",
+        " *************",
+        "  ***********",
+        "   *********",
+        "    *******",
+        "     *****",
+        "      ***",
+        "       *"
+        };
+
+        string[] frame6 = new string[]
+        {
+        "       *",
+        "      ***",
+        "     *****",
+        "    *******",
+        "   *********",
+        "  ***********",
+        " *************",
+        "  ***********",
+        "   *********",
+        "    *******",
+        "     *****",
+        "      ***",
+        "       *"
+        };
+
+        string[][] frames = new string[][] { frame1, frame2, frame3, frame4, frame5, frame6 };
+
+        int totalFrames = frames.Length;
+
+        for (int loop = 0; loop < 10; loop++)
+        {
+            for (int i = 0; i < totalFrames; i++)
+            {
+                Console.Clear();
+                foreach (var line in frames[i])
+                {
+                    Console.WriteLine(line);
+                }
+                Thread.Sleep(200);
+            }
+        }
+    }
+
+    private static void PokemonBallAnimation()
+    {
+        string[] frame1 = new string[]
+        {
+        "  /\\   ",
+        " /  \\  ",
+        " ------ ",
+        "|  O  |",
+        "|  O  |",
+        "  \\__/  "
+        };
+
+        string[] frame2 = new string[]
+        {
+        "  /\\   ",
+        " /  \\  ",
+        " ------ ",
+        "| O   |",
+        "|  O  |",
+        "  \\__/  "
+        };
+
+        string[] frame3 = new string[]
+        {
+        "  /\\   ",
+        " /  \\  ",
+        " ------ ",
+        "|  O   |",
+        "|  O  |",
+        "  \\__/  "
+        };
+
+        string[] frame4 = new string[]
+        {
+        "  /\\   ",
+        " /  \\  ",
+        " ------ ",
+        "|   O  |",
+        "|  O  |",
+        "  \\__/  "
+        };
+
+        string[] frame5 = new string[]
+        {
+        "  /\\   ",
+        " /  \\  ",
+        " ------ ",
+        "|  O   |",
+        "|   O  |",
+        "  \\__/  "
+        };
+
+        string[] frame6 = new string[]
+        {
+        "  /\\   ",
+        " /  \\  ",
+        " ------ ",
+        "|  O  |",
+        "|   O  |",
+        "  \\__/  "
+        };
+
+        string[] frame7 = new string[]
+        {
+        "  /\\   ",
+        " /  \\  ",
+        " ------ ",
+        "|  O  |",
+        "|  O   |",
+        "  \\__/  "
+        };
+
+        string[] frame8 = new string[]
+        {
+        "  /\\   ",
+        " /  \\  ",
+        " ------ ",
+        "|  O  |",
+        "|  O  |",
+        "  \\__/  "
+        };
+
+        string[] frame9 = new string[]
+        {
+        "  /\\   ",
+        " /  \\  ",
+        " ------ ",
+        "|  O  |",
+        "|  O  |",
+        "  \\__/  "
+        };
+
+        string[] frame10 = new string[]
+        {
+        "  /\\   ",
+        " /  \\  ",
+        " ------ ",
+        "|  O  |",
+        "|  O  |",
+        "  \\__/  "
+        };
+
+        string[][] frames = new string[][] { frame1, frame2, frame3, frame4, frame5, frame6, frame7, frame8, frame9, frame10 };
+
+        int totalFrames = frames.Length;
+
+        for (int loop = 0; loop < 10; loop++)
+        {
+            for (int i = 0; i < totalFrames; i++)
+            {
+                Console.Clear();
+                foreach (var line in frames[i])
+                {
+                    Console.WriteLine(line);
+                }
+                Thread.Sleep(200);
+            }
+        }
+    }
+    static void Main()
+    {
+        PokemonBallAnimation();
+
+        LoadingAnimation();
+
+        ChristmasTreeAnimation();
+
+
+    }
+}
